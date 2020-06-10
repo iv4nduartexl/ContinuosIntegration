@@ -13,5 +13,11 @@ class NumericoTest {
 		IntStream numeros= IntStream.of(2,5,1,6,12);
 		assertEquals(12,Numerico.numeroMayor(numeros));
 	}
+	
+	@Test
+	void testMin() {
+		IntStream numeros= IntStream.of(1,3,20,4,12);
+		assertEquals(1,Numerico.numeroMenor(numeros));
+	}
 
 }
