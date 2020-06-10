@@ -19,7 +19,6 @@ class ListaTest {
 	void testContar() {
 		List<String> datos = Arrays.asList("Rosa", "Margarita", "Tulipan");
 		assertEquals(3,Lista.contar(datos));
-		assertEquals(5,Lista.contar(datos));
 	}
 	
 	@Test
