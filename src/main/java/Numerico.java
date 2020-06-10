@@ -34,4 +34,15 @@ public class Numerico {
 	public static int suma(int min, int max) {
 		return IntStream.rangeClosed(min, max).sum();
 	}
+	
+	
+	/**
+	 * Método para ver si se encuentra en la lista un número mayor al que se ingresó
+	 * @param numeros son los valores que van a ser comparador para dar el resultado
+	 * @param mayor es el parametro que se va a comparar con la lista para obtener el mayor resultado
+	 * @return regresa un true si hay un número mayor o false si no lo hay
+	 */
+	public static boolean hayMayor(IntStream numeros,int mayor) {
+		return numeros.anyMatch(num->num > mayor);
+	}
 }

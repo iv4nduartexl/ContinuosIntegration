@@ -27,5 +27,13 @@ class NumericoTest {
 	void testSuma() {
 		assertEquals(15, Numerico.suma(1, 5));
 	}
+	
+	@Test
+	void testHayMayor() {
+		IntStream numeros= IntStream.of(3,4,5,1,2);
+		assertTrue(Numerico.hayMayor(numeros, 4));
+		IntStream numeros2= IntStream.of(9,4,5,1,2);
+		assertFalse(Numerico.hayMayor(numeros2, 15));
+	}
 
 }
