@@ -1,3 +1,4 @@
+import java.util.Spliterator;
 import java.util.stream.IntStream;
 
 
@@ -22,5 +23,15 @@ public class Numerico {
 	 */
 	public static int numeroMenor(IntStream numeros) {
 		return numeros.min().getAsInt();
+	}
+	
+	/**
+	 * Método que suma un rango de números incluyendo los que están dentro de los mínimos y máximos
+	 * @param min valor mínimo del rango
+	 * @param max valor máximo del rango
+	 * @return retorna la suma de todos los valores en forma de entero
+	 */
+	public static int suma(int min, int max) {
+		return IntStream.rangeClosed(min, max).sum();
 	}
 }
