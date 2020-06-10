@@ -1,9 +1,9 @@
-import java.util.Spliterator;
+
 import java.util.stream.IntStream;
 
 
 /**
- * @author Iv�n Duarte
+ * @author Iván Duarte
  *
  */
 public class Numerico {
