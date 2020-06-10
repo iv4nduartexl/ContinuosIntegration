@@ -35,5 +35,11 @@ class NumericoTest {
 		IntStream numeros2= IntStream.of(9,4,5,1,2);
 		assertFalse(Numerico.hayMayor(numeros2, 15));
 	}
+	
+	@Test
+	void testProducto() {
+		IntStream numeros= IntStream.of(5,2,6,8);
+		assertEquals(480,Numerico.producto(numeros));
+	}
 
 }

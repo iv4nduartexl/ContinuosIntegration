@@ -45,4 +45,13 @@ public class Numerico {
 	public static boolean hayMayor(IntStream numeros,int mayor) {
 		return numeros.anyMatch(num->num > mayor);
 	}
+	
+	/**
+	 * Método para calcular el producto de varios números ingresados
+	 * @param numeros lista de números que van a ser multiplicados
+	 * @return regresa el resultado de toda la multiplicación en form de entero
+	 */
+	public static int producto(IntStream numeros) {
+		return numeros.reduce((a, b) -> (a * b)).getAsInt();
+	}
 }
